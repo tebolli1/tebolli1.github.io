@@ -1,5 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100%;
   margin: 0;
   padding: 0;
   background-color: #bedcbc;
@@ -7,11 +8,34 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #228557;
   color: white;
   padding: 1.5em;
   text-align: center;
 }
+
+header h1, header h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.home-link {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.3em 0.6em;
+  border-radius: 0.25em;
+}
+
+.home-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 
 .fish-links {
   display: flex;
@@ -51,6 +75,16 @@ main {
   gap: 1em;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.intro video {
+  margin-left: 4em;
+}
+
 .hero-image {
   flex: 0 0 50%;
 }
@@ -68,6 +102,7 @@ footer {
 
 .footer-left {
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .footer-left a {
